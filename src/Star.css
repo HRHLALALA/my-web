@@ -1,0 +1,29 @@
+#Star{
+    position: relative;
+    border-color: green;
+    border-style: solid;
+    float:left;
+}
+
+.star {
+    cursor: pointer; 
+    height: 100px;
+    width: 100px;
+    margin: 2px;
+    float: left; 
+    background-color: grey; 
+    clip-path: polygon(
+        50% 0%,
+        63% 38%,
+        100% 38%,
+        69% 59%,
+        82% 100%,
+        50% 75%,
+        18% 100%,
+        31% 59%,
+        0% 38%,
+        37% 38%
+    ); }
+    .star.selected { 
+        background-color: red;
+    }
