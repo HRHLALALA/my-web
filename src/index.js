@@ -1,31 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import bg from './Image/bg.jpg'
+import HomePage from './pages/homePage';
 import './index.css';
-import Card from './Card.js';
-import Navigation from './Navigation.js';
-//import Star from './Star.js';
-
+import {
+    BrowserRouter,
+    Route,
+    Switch
+  } from "react-router-dom";
+  import Star from './components/Star';
+  //import {
+    //CSSTransition,
+    //TransitionGroup,
+  //} from 'react-transition-group';
 class Main extends React.Component{
     render(){
         return(
             <body>
-                <div>
-                    <div><Card src={bg}/></div>
-                </div>
-                <div className ="info">
-                    <div id="navigation">
-                        <Navigation />
-                    </div>
-                    <div id="description">
-                        hello, I am Renhao.
-                    </div>
-                </div>
+                <BrowserRouter>
+                <Route render={({location}) => (
+                        <Switch location={location}>
+                            <Route exact path="/" component={HomePage} />
+                            <Route exact path="/star" component={Star} />
+                            <Route exact path="/home" component={HomePage} />
+                        </Switch>
+                )}/>
+                </BrowserRouter>
             </body>
         );
     };
 }
-
 ReactDOM.render(
     <Main />,
     document.getElementById('root')

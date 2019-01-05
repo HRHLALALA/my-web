@@ -1,6 +1,6 @@
 import React from 'react';
-import './Card.css'
-class Card extends React.Component{
+import './../css/Photo.css'
+class Photo extends React.Component{
 
     render(){
         return(
@@ -14,4 +14,4 @@ class Card extends React.Component{
     };
 }
 
-export default Card;
+export default Photo;

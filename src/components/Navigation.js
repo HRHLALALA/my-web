@@ -1,19 +1,22 @@
 import React from 'react';
-import './Navigation.css'
-
+import './../css/Navigation.css'
+import {
+    Link,
+} from "react-router-dom";
 class Navigation extends React.Component{
 
     render(){
         return(
+            <div>
             <div id = "Nav">
                 <ul>
                 <li><a href="http://github.com">Github</a></li>
                 <li><a href="https://www.linkedin.com/in/renhao-huang-28bb06148/">Linkedin</a></li>
-                <li><a href="http://4399.com">4399</a></li>
-                <li><a href="http://google.com">Google</a></li>
+                <li><Link to="/star">star</Link></li>
+                <li><Link to="/home">home</Link></li>
                 </ul>
             </div>
-            
+          </div>
         );
     };
 }

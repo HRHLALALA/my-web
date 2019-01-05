@@ -1,5 +1,5 @@
 import React from 'react';
-import './Star.css'
+import './../css/Star.css'
 
 class Star extends React.Component{
     constructor(props){
