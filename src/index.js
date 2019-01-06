@@ -8,6 +8,9 @@ import {
     Switch
   } from "react-router-dom";
   import Star from './components/Star';
+ //import Sound from 'react-sound';
+ import MusicPlayer from './components/MusicPlayer/MusicPlayer';
+ 
   //import {
     //CSSTransition,
     //TransitionGroup,
@@ -16,6 +19,7 @@ class Main extends React.Component{
     render(){
         return(
             <body>
+                <MusicPlayer/>
                 <BrowserRouter>
                 <Route render={({location}) => (
                         <Switch location={location}>
@@ -24,6 +28,7 @@ class Main extends React.Component{
                             <Route exact path="/home" component={HomePage} />
                         </Switch>
                 )}/>
+                
                 </BrowserRouter>
             </body>
         );
