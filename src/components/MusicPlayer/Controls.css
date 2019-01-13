@@ -1,0 +1,61 @@
+@keyframes ROTATE {
+    from {
+        -webkit-transform: rotate(0deg); 
+    }
+  
+    to {
+        -webkit-transform: rotate(360deg); 
+    }
+  }
+
+
+.Controls {
+    border: 1px solid white;
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    border-style: double;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Controls:hover{
+    border: 1px solid blueviolet;
+    border-style: double;
+    animation: ROTATE 2s linear infinite;
+}
+
+.Controls .Pause{
+    display: inline-block;
+    margin:auto;
+    width:0;
+    height:50%;
+    border-style: double;
+    border-width: 0px 0 0px 20px;
+    border-color: transparent transparent transparent white;
+}
+
+
+
+.Controls .Pause:hover{
+    border-color:blueviolet;
+}
+
+
+.Controls .Start{
+    border-style:solid;
+    margin-left:9px;
+    height:0;
+    width:0;
+    border-top: 14px solid transparent; 
+    border-left: 24.3px solid  white; 
+    border-right:0px solid  transparent;
+    border-bottom: 14px solid transparent; 
+    
+}
+
+.Controls .Start:hover{
+    border-left-color: blueviolet;
+}
+

@@ -1,8 +1,7 @@
-.MusicPlayer{
+.header{
     position:fixed;
     z-index: 9999;
-    border-color :white;
-    border-style: double;
+
 }
 
 audio:hover, audio:focus, audio:active

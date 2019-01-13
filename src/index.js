@@ -9,7 +9,7 @@ import {
   } from "react-router-dom";
   import Star from './components/Star';
  //import Sound from 'react-sound';
- import MusicPlayer from './components/MusicPlayer/MusicPlayer';
+ import MusicPlayer from './container/MusicPlayer.js';
  
   //import {
     //CSSTransition,
@@ -19,13 +19,13 @@ class Main extends React.Component{
     render(){
         return(
             <body>
-                <MusicPlayer/>
                 <BrowserRouter>
                 <Route render={({location}) => (
                         <Switch location={location}>
                             <Route exact path="/" component={HomePage} />
                             <Route exact path="/star" component={Star} />
                             <Route exact path="/home" component={HomePage} />
+                            <Route exact path = "/music" component={MusicPlayer}/>
                         </Switch>
                 )}/>
                 

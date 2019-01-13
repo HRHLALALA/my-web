@@ -14,6 +14,7 @@ class Navigation extends React.Component{
                 <li><a href="https://www.linkedin.com/in/renhao-huang-28bb06148/">Linkedin</a></li>
                 <li><Link to="/star">star</Link></li>
                 <li><Link to="/home">home</Link></li>
+                <li><Link to="/music">Music</Link></li>
                 </ul>
             </div>
           </div>
