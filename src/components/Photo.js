@@ -1,5 +1,5 @@
 import React from 'react';
-import './../css/Photo.css';
+import './Photo.css';
 class Photo extends React.Component{
 
     render(){

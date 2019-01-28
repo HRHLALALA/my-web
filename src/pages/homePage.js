@@ -3,7 +3,7 @@ import Navigation from './../components/Navigation'
 import Photo from './../components/Photo'
 import bg from './../Image/cat.jpg';
 import MusicPlayer from './../container/MusicPlayer.js';
-import './../css/homePage.css';
+import './homePage.css';
 class HomePage extends React.Component{
     render(){
         return(
@@ -15,7 +15,8 @@ class HomePage extends React.Component{
                     <Navigation />
                 </div>
                 <div id="description">
-                    Hello, I am Renhao
+                    Hello,
+                    I am Renhao
                 </div>
                 <div id="music">
                     <MusicPlayer />

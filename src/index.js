@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import HomePage from './pages/homePage';
+import ProfilePage from './pages/profilePage';
 import './index.css';
 import {
     BrowserRouter,
@@ -25,7 +26,7 @@ class Main extends React.Component{
                 <Route render={({location}) => (
                         <Switch location={location}>
                             <Route exact path="/" component={HomePage} />
-                            <Route exact path="/star" component={Star} />
+                            <Route exact path="/profile" component={ProfilePage} />
                             <Route exact path="/home" component={HomePage} />
                             <Route exact path = "/music" component={MusicPlayer}/>
                         </Switch>
