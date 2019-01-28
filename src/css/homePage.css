@@ -1,20 +1,23 @@
 #navigation{
     flex:1;
     float:left;
-    width:33%;
-    background:white;
+    
 }
 #description{
-    flex:2;
+    flex:1;
     float:left;
     color: white;
-    width:66%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 60px;
     text-align: center;
 }
+#music{
+    flex:1;
+    border-style: double;
+    float:left;
+}
 
-.info{
+#info{
     display: flex;
     flex-direction: row;
+    align-items: stretch;
 }

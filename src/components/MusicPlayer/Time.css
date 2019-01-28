@@ -1,10 +1,8 @@
 .time{
     display: flex;
-    position: absolute;
     border-color: white;
-    border-style: dotted;
     color:white;
-    width:300px;
+    width:100%;
 }
 
 .duration{
@@ -15,11 +13,4 @@
 .currentTime{
     flex:1;
     float:left;
-}
-
-.progress-bar{
-    flex: 2;
-    float:left;
-    margin-top:auto;
-    margin-bottom: auto;
 }

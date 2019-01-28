@@ -1,28 +1,16 @@
 body{
     background:black;
-    width:90%;
+}
+
+.body{
+    background:black;
+    width:80%;
     height:90%;
     margin:auto;
 }
 
-#navigation{
-    flex:1;
-    float:left;
-    width:33%;
-    background:white;
-}
-#description{
-    flex:2;
-    float:left;
-    color: white;
-    width:66%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 60px;
-    text-align: center;
-}
-
-.info{
-    display: flex;
-    flex-direction: row;
+.Music{
+    position:fixed;
+    float:right;
 }
 

@@ -1,19 +1,24 @@
 import React from 'react';
 import Navigation from './../components/Navigation'
 import Photo from './../components/Photo'
-import bg from './../Image/bg.jpg';
+import bg from './../Image/cat.jpg';
+import MusicPlayer from './../container/MusicPlayer.js';
+import './../css/homePage.css';
 class HomePage extends React.Component{
     render(){
         return(
         <div>
             <Photo src = {bg}/>
-            <div className ="info">
+            <div id ="info">
                 
                 <div id="navigation">
                     <Navigation />
                 </div>
                 <div id="description">
-                    hello, I am Renhao.
+                    Hello, I am Renhao
+                </div>
+                <div id="music">
+                    <MusicPlayer />
                 </div>
             </div>
         </div>
