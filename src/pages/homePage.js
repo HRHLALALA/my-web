@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from './../components/Navigation'
 import Photo from './../components/Photo'
-import bg from './../Image/cat.jpg';
+import bg from './../Image/bg1.jpeg';
 import MusicPlayer from './../container/MusicPlayer.js';
 import './homePage.css';
 class HomePage extends React.Component{
