@@ -1,0 +1,33 @@
+.profilePage{
+    position: relative;
+}
+.profilePage .photo{
+    position: absolute;
+    width:100%;
+}
+
+
+.profilePage .title{
+    position: fixed;
+    margin-top:15%;
+    margin-left:10%;
+    
+}
+
+.profilePage .title h2{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    text-align: center;
+    color:rgb(124, 123, 43);
+    transform-origin:center;
+    transition: all 0.5s linear;
+}
+
+
+
+.profilePage .title h2{
+    font-size:50px;
+}
+
+.title:hover h2{
+    transform: rotateY(180deg);
+}

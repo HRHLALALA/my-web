@@ -2,15 +2,11 @@ body{
     background:black;
 }
 
-.body{
+body .body{
     background:black;
-    width:80%;
+    width:100%;
     height:90%;
-    margin:auto;
-}
-
-.Music{
-    position:fixed;
-    float:right;
+    margin: 0 auto;
+    text-align: left;
 }
 

@@ -21,7 +21,7 @@ class MusicPlayer extends React.Component{
     }
     render(){
         return(
-            <div className ="player"
+            <div className ="container-player"
                 onMouseOver = {()=>this.refs.cover.openAlbum()}
                 onMouseOut = {()=>this.refs.cover.closeAlbum()}
                 >

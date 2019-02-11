@@ -1,8 +1,13 @@
-#navigation{
+.homePage{
+    width:100%;
+    position: relative;
+}
+
+.navigation{
     flex:1;
     float:left;
 }
-#description{
+.description{
     flex:1;
     float:left;
     color: white;
@@ -10,13 +15,13 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: left;
 }
-#music{
+.music{
     flex:1;
     border-style: double;
     float:left;
 }
 
-#info{
+.info{
     display: flex;
     flex-direction: row;
     align-items: stretch;
