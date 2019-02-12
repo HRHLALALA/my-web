@@ -8,7 +8,7 @@ import {
     Route,
     Switch
   } from "react-router-dom";
-  import MusicPlayer from './container/MusicPlayer.js';
+  import Album from './container/MusicPlayerWithAlbum.js';
  
 class Main extends React.Component{
     render(){
@@ -20,7 +20,7 @@ class Main extends React.Component{
                                 <Route exact path="/" component={HomePage} />
                                 <Route exact path="/profile" component={ProfilePage} />
                                 <Route exact path="/home" component={HomePage} />
-                                <Route exact path = "/music" component={MusicPlayer}/>
+                                <Route exact path = "/music" component={Album}/>
                             </Switch>
                     )}/>
                 

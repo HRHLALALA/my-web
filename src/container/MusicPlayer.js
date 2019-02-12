@@ -21,10 +21,7 @@ class MusicPlayer extends React.Component{
     }
     render(){
         return(
-            <div className ="container-player"
-                onMouseOver = {()=>this.refs.cover.openAlbum()}
-                onMouseOut = {()=>this.refs.cover.closeAlbum()}
-                >
+            <div className ="container-player">
                 <div className="header">
                     
                     <div className ="middle-control"
@@ -46,7 +43,7 @@ class MusicPlayer extends React.Component{
                     <Circle
                         percent = {this.state.currentTime/this.state.duration*100}
                         trailWidth ="2" trailColor = "white"
-                        strokeWidth="2" strokeColor="blueviolet"
+                        strokeWidth="2" strokeColor="rgb(56, 169, 214)"
                         className = "progress-bar"
                     />
 
@@ -57,7 +54,7 @@ class MusicPlayer extends React.Component{
                     {/* 音频控件  */}
 
                 </div >
-                <Cover ref="cover"/>
+                
             </div>
         );
     }

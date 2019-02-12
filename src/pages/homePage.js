@@ -1,16 +1,13 @@
 import React from 'react';
-import Navigation from './../components/Navigation'
-import Photo from './../components/Photo'
 import bg from './../Image/starTrek.jpg';
-import MusicPlayer from './../container/MusicPlayer.js';
 import './homePage.css';
 import NavigationBar from './../container/NavigationBar';
-import NavigationLogo from './../components/NavigationLogo';
+import MusicPlayer from './../container/MusicPlayer';
 class HomePage extends React.Component{
     render(){
         return(
         <div className = "homePage" style={ { 'background-image':'url('+bg+')'}} >
-
+            <MusicPlayer/>
             <NavigationBar isLogo = "false" />
 
             <div className ="info">

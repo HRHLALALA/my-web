@@ -1,5 +1,4 @@
 import React from 'react';
-import Photo from './../components/Photo';
 //import bg from './../Image/cat.jpg';
 //import MusicPlayer from './../container/MusicPlayer.js';
 import hrh from './../Image/lonely.jpeg';
@@ -9,7 +8,7 @@ class ProfilePage extends React.Component{
     render(){
         return(
         <div class = "profilePage" style={ { 'background-image':'url('+hrh+')'}}>
-            <NavigationBar />
+            <NavigationBar isLogo = "false"/>
             
             <div className = "title">
                 <h2>

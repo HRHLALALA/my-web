@@ -17,16 +17,8 @@
     flex:1;
     float:left;
 }
-.description{
-    flex:1;
-    float:left;
-    color: white;
-    font-size:60px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: left;
-}
+
 .music{
-    flex:1;
     border-style: double;
     float:left;
 }

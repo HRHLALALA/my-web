@@ -9,7 +9,7 @@
 .container-NavBar .Name{
     display: table-cell;
     vertical-align: middle;
-    font-size:50px;
+
     height:100%;
     float:left;
     margin-left:3%;
@@ -23,6 +23,7 @@
 }
 .container-NavBar .Name.HRH{
     font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:50px;
     color:transparent;
     background: linear-gradient(to bottom right, red, yellow);
     background-clip: text;
@@ -31,6 +32,7 @@
 .container-NavBar .Name.UNSW{
     font-family: monospace,Gill Sans Extrabold,;
     margin-left:60%;
+    font-size:30px;
     color:transparent;
     background: linear-gradient(to bottom right, violet,green);
     background-clip: text;

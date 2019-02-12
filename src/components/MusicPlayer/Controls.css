@@ -23,7 +23,7 @@
 }
 
 .Controls:hover{
-    border: 1px solid blueviolet;
+    border: 1px solid rgb(56, 169, 214);
     border-style: double;
     animation: ROTATE 2s linear infinite;
 }
