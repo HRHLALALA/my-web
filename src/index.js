@@ -13,9 +13,8 @@ import {
 class Main extends React.Component{
     render(){
         return(
-            <div >
-                <div className = "body">
-                    <BrowserRouter>
+            <body>
+                <BrowserRouter>
                     <Route render={({location}) => (
                             <Switch location={location}>
                                 <Route exact path="/" component={HomePage} />
@@ -24,10 +23,9 @@ class Main extends React.Component{
                                 <Route exact path = "/music" component={MusicPlayer}/>
                             </Switch>
                     )}/>
-                    
-                    </BrowserRouter>
-                </div>
-            </div>
+                
+                </BrowserRouter>
+            </body>
         );
     };
 }

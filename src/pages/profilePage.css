@@ -6,16 +6,7 @@
     background-repeat: no-repeat;
 }
 
-@media screen and (max-height:700px){
-    .profilePage{
-        background-size:100% 1000px;
-    }
-}
-@media screen and (max-width:1000px){
-    .profilePage{
-        background-size:1000px 100%;
-    }
-}
+
 .profilePage .photo{
     position: absolute;
     width:100%;

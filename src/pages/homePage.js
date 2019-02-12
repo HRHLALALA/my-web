@@ -5,26 +5,20 @@ import bg from './../Image/starTrek.jpg';
 import MusicPlayer from './../container/MusicPlayer.js';
 import './homePage.css';
 import NavigationBar from './../container/NavigationBar';
+import NavigationLogo from './../components/NavigationLogo';
 class HomePage extends React.Component{
     render(){
         return(
-        <div className = "homePage" >
+        <div className = "homePage" style={ { 'background-image':'url('+bg+')'}} >
 
-            <NavigationBar />
+            <NavigationBar isLogo = "false" />
 
-            <Photo src = {bg}/>
             <div className ="info">
-                
-                <div className="navigation">
-                    <Navigation isHorizontal = "false"/>
-                </div>
-                <div className="description">
-                    Hello,
-                    I am Renhao
-                </div>
-                <div className="music">
-                    <MusicPlayer />
-                </div>
+                Explore The New World
+            </div>
+
+            <div className = "logobar"> 
+                <NavigationBar isLogo = "true"/>
             </div>
         </div>
         );
