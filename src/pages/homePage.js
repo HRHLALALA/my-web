@@ -8,7 +8,7 @@ import NavigationBar from './../container/NavigationBar';
 class HomePage extends React.Component{
     render(){
         return(
-        <div className = "homePage">
+        <div className = "homePage" >
 
             <NavigationBar />
 

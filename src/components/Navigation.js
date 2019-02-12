@@ -11,7 +11,7 @@ class Navigation extends React.Component{
             <div className = {this.props.isHorizontal ==="true"?"Nav horizontal":"Nav"}>
                 <ul>
                 <li><Link to="/profile">Profile</Link></li>
-                <li><Link to="/home">Gallary</Link></li>
+                <li><Link to="/home">Gallery</Link></li>
                 <li><Link to="/music">Music</Link></li>
                 </ul>
             </div>

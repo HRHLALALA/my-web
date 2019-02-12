@@ -8,12 +8,9 @@ import './profilePage.css';
 class ProfilePage extends React.Component{
     render(){
         return(
-        <div class = "profilePage">
+        <div class = "profilePage" style={ { 'background-image':'url('+hrh+')'}}>
             <NavigationBar />
-            <div className="photo">
-                <Photo src = {hrh}>
-                </Photo>
-            </div>
+            
             <div className = "title">
                 <h2>
                     Explore The New World
