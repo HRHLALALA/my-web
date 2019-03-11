@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import HomePage from './pages/homePage';
 import ProfilePage from './pages/profilePage';
 import './index.css';
+import NavigationBar from './container/NavigationBar';
 import {
     BrowserRouter,
     Route,
     Switch
   } from "react-router-dom";
-  import Album from './container/MusicPlayerWithAlbum.js';
- 
+import GalleryPage from  './pages/galleryPage';
+import MusicPlayer from './container/MusicPlayer';
+import MusicPage from  './pages/musicPage';
 class Main extends React.Component{
     render(){
         return(
@@ -20,11 +22,17 @@ class Main extends React.Component{
                                 <Route exact path="/" component={HomePage} />
                                 <Route exact path="/profile" component={ProfilePage} />
                                 <Route exact path="/home" component={HomePage} />
-                                <Route exact path = "/music" component={Album}/>
+                                <Route exact path = "/music" component={MusicPage}/>
+                                <Route exact path = "/gallery" component={GalleryPage}/>
                             </Switch>
                     )}/>
                 
                 </BrowserRouter>
+
+                <div className = "logobar"> 
+                <MusicPlayer id = "music-player-index"/>
+                <NavigationBar isLogo = "true"/>
+                </div>
             </body>
         );
     };

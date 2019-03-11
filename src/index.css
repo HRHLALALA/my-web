@@ -6,3 +6,10 @@ body{
     text-align: left;
 
 }
+
+body .logobar{
+    width:100%;
+    position: fixed;
+    display:table-footer-group;
+    bottom:0;
+}

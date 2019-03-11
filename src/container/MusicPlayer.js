@@ -1,13 +1,12 @@
 import React from 'react';
-import bgm from './../bgm.mp3';
 import './MusicPlayer.css'
 import Time from './../components/MusicPlayer/Time';
 //import TrackInfo from './../components/MusicPlayer/TrackInfo';
 import Controls from './../components/MusicPlayer/Controls';
 import { Circle } from 'rc-progress';
-import Cover from './../components/MusicPlayer/Cover';
 //import bg from './../Image/boa.jpg';
 //import Photo from '../components/Photo';
+import bgm from "./../Music/bgm.mp3";
 
 class MusicPlayer extends React.Component{
     constructor(props){
@@ -98,6 +97,9 @@ class MusicPlayer extends React.Component{
         });
     }
 
+    loadJson(){
+        var music = require('../Music/Music.json');
+    }
 }
 
 export default MusicPlayer;

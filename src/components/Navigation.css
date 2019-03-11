@@ -30,8 +30,7 @@
 
 .component-navigation li a:hover:not(.active) {
     font-size:35px;
-    border-style:groove;
-    border-color: rgba(162, 182, 238, 0.233);
+
     color: violet;
 }
 

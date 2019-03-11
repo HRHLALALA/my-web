@@ -1,0 +1,44 @@
+@keyframes rotation{
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(360deg);
+    }
+}
+
+
+
+.Gallery-container{
+    width:100%;
+    height:500px;
+    position: relative;
+    perspective: 2100px;
+}
+#Gallery{
+    width:100%;
+    height:100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 30s infinite linear;
+}
+#Gallery .Photos{
+    width: 210px;
+    height: 210px;
+    line-height: 210px;
+    left:40%;
+    top:5%;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    border: solid 5px black;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+#Gallery .Photo:hover {
+    cursor: pointer;
+
+}
+
+

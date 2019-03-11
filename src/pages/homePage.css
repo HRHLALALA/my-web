@@ -6,20 +6,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.homePage .logobar{
-    width:100%;
-    position: fixed;
-    display:table-footer-group;
-    bottom:0;
-}
-
-.navigation{
-    flex:1;
-    float:left;
-}
 
 .music{
-    border-style: double;
     float:left;
 }
 

@@ -12,8 +12,14 @@ class ProfilePage extends React.Component{
             
             <div className = "title">
                 <h2>
-                    Explore The New World
+                    Renhao Huang
                 </h2>
+                <p>
+                    Name: Renhao Huang <br/>
+                    Age: 22 <br/>
+                    University: UNSW <br/>
+                    Nationality: CHINESE <br/>
+                </p>
             </div>                
             
         </div>

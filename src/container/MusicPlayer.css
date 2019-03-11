@@ -20,7 +20,7 @@
 }
 
 .container-player .header{
-    left:60%;
+    left:5%;
     position: absolute;
     float: left;
     border-radius:50%;
@@ -56,9 +56,9 @@
 }
 .container-player .header:hover, .header:focus, .header:active
 {
-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
 
--webkit-transform: scale(1.05);
--moz-transform: scale(1.05);
-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
 }
