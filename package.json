@@ -2,7 +2,7 @@
   "name": "my-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "http://hrhlalala.github.io",
   "dependencies": {
     "deploy": "^1.0.3",
     "rc-progress": "^2.3.0",
