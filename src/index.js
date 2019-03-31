@@ -6,7 +6,8 @@ import NotDoneYet from './pages/NotDoneYet.js';
 import './index.css';
 import NavigationBar from './container/NavigationBar';
 import {
-    BrowserRouter,
+    //BrowserRouter,
+    HashRouter,
     Route,
     Switch
   } from "react-router-dom";
@@ -18,7 +19,7 @@ class Main extends React.Component{
         return(
             <body>
                 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
-                <BrowserRouter>
+                <HashRouter>
                     <Route render={({location}) => (
                             <Switch location={location}>
                                 <Route exact path="/" component={HomePage} />
@@ -29,7 +30,7 @@ class Main extends React.Component{
                             </Switch>
                     )}/>
                 
-                </BrowserRouter>
+                </HashRouter>
 
                 <div className = "logobar"> 
                 <MusicPlayer id = "music-player-index"/>
