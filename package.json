@@ -2,7 +2,7 @@
   "name": "my-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hrhlalala.tk",
+  "homepage": "https://hrhlalala.github.io/",
   "dependencies": {
     "rc-progress": "^2.3.0",
     "react": "^16.7.0",
@@ -31,6 +31,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "master": "^1.0.1",
     "react-image-resizer": "^1.3.0"
   }
 }
