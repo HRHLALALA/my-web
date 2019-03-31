@@ -1,0 +1,54 @@
+
+
+#PhotoCard {
+    margin:auto;
+    width:800px;
+    height:500px;
+    margin-top:12%;
+
+}
+
+#PhotoCard .photo{
+    width:500px;
+    height:500px;
+    float:left;
+}
+
+#PhotoCard .desc{
+    position: relative;
+    width:300px;
+    height:500px;
+    float:right;
+    background-color: white;
+}
+
+#PhotoCard h1{
+    margin-top:40px;
+    text-align: center;
+    font-size:40px;
+    color:black;
+    font-family: Luminari, fantasy;
+
+}
+
+#PhotoCard .description{
+    font-size:20px;
+    white-space: pre-line;
+    color:black;
+    margin-left:5px;
+    text-align: left;
+    padding:10%;
+}
+
+
+#PhotoCard .Signature{
+    left:10px;
+    color:blueviolet;
+    font-size: 30px;
+    text-align: right;
+    position:absolute;
+    right:10%;
+    bottom:0;
+    font-family:'Sacramento';
+    transform: rotate(-20deg);
+}

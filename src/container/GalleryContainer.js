@@ -3,7 +3,19 @@ import PhotoList from './../Image/Photos/photos.json';
 import './GalleryContainer.css';
 import Photo from './../components/Photo';
 import Photobase from './../Image/Photos/cat.jpg';
+import PhotoCard from './PhotoCard';
 class GalleryContainer extends React.Component{
+    constructor(props){
+        super(props);
+        let imagelist = {};
+        const r = require.context('./../Image/Photos', false, /\.(png|jpe?g|svg)$/)
+        r.keys().map((item, index) => { imagelist[item.replace('./', '')] = r(item); });
+        this.state = {
+            images:imagelist,
+            currImage:null,
+            index: 0,
+        }
+    }
     importAll(r) {
         let images = {};
         r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
@@ -11,19 +23,25 @@ class GalleryContainer extends React.Component{
     }
       
     render(){
-        const images = this.importAll(require.context('./../Image/Photos', false, /\.(png|jpe?g|svg)$/));
-        console.log(images);
+        //const images = this.importAll(require.context('./../Image/Photos', false, /\.(png|jpe?g|svg)$/));
+        //console.log(images);
         return(
             <div className = "Gallery-container">
                 <div id = "Gallery">
                     {PhotoList.map((item,index)=>(
                         <div className = "Photos" 
                             onMouseOver ={()=>this.onMouseOver(index)} 
-                            onMouseOut = {()=>this.onMouseOut(index)}>
-                            
-                            <Photo src = {images[item.fileName]}/>
+                            onMouseOut = {()=>this.onMouseOut(index)}
+                            onClick = {()=>this.overlayOn(item,index)}>
+                            <Photo src = {this.state.images[item.fileName]}/>
                         </div>
                     ))}
+                </div>
+                <div id = "overlay">
+                    <div class = "background" onClick ={()=>this.overlayOff()}></div>
+                    <div  class="prev round" onClick = {()=>this.prevPhoto()}>&#8249;</div>
+                    <PhotoCard list = {this.state.images} photo = {this.state.currImage}/>
+                    <div href="#" class="next round" onClick = {()=>this.nextPhoto()}>&#8250;</div>
                 </div>
             </div>
         )
@@ -57,6 +75,33 @@ class GalleryContainer extends React.Component{
         }*/
         const gallery = document.getElementById('Gallery');
         gallery.style['animation-play-state']= "running";
+    }
+
+    overlayOn(item,index){
+        const overlay = document.getElementById('overlay');
+        overlay.style.display = "block";
+        /*const photo = document.getElementById("card");
+        photo.src = this.state.images[item.fileName];*/
+        this.setState({currImage:item, index:index})
+    }
+    overlayOff(index){
+        const overlay = document.getElementById('overlay');
+        overlay.style.display = "none";
+
+    }
+    nextPhoto(){
+        var i = this.state.index + 1;
+        this.setState({
+            index:(i+1)%PhotoList.length,
+            currImage: PhotoList[(i+1)%PhotoList.length],
+        })
+    }
+    prevPhoto(){
+        var i = this.state.index - 1;
+        this.setState({
+            index:(i-1+PhotoList.length)%PhotoList.length,
+            currImage: PhotoList[(i-1+PhotoList.length)%PhotoList.length],
+        })
     }
 
 }

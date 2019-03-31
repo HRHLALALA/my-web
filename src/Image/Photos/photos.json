@@ -1,48 +1,48 @@
 [
     {
-        "title": "cat",
+        "title": "Cat",
         "description":"This is a cat",
         "fileName": "cat.jpg"
     },
 
     {
-        "title":"unsw",
+        "title":"UNSW",
         "description":"This is unsw",
         "fileName":"unsw.jpeg"
     },
     {
-        "title":"lake",
+        "title":"Lake",
         "description":"This is lake",
         "fileName":"lake.jpeg"
     },
     {
-        "title":"curve",
+        "title":"Curve",
         "description":"This is curve",
         "fileName":"curve.jpeg"
     },
     {
-        "title":"ocean",
+        "title":"Ocean",
         "description":"This is ocean",
         "fileName":"ocean.jpeg"
     },
     {
-        "title":"ocean 2",
+        "title":"Ocean 2",
         "description":"This is ocean2",
         "fileName":"ocean2.jpeg"
     },
     {
-        "title":"tuwu",
+        "title":"Tu Wu",
         "description":"This is tuwu",
         "fileName":"tuwu.jpeg"
     },
     {
-        "title":"garden",
+        "title":"Garden",
         "description":"This is garden",
         "fileName":"garden.jpeg"
     },
     {
-        "title":"coffee cup",
-        "description":"This is coffee cup",
+        "title":"Kopi Luwak",
+        "description":"\"Drink a cup of coffee and have a good day.\"",
         "fileName":"coffee.jpeg"
     },
     {

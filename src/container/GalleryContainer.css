@@ -15,6 +15,66 @@
     position: relative;
     perspective: 2100px;
 }
+
+.Gallery-container #overlay{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  left:0;
+  right:0;
+  top:0;
+  bottom: 0;
+  transform:translateZ(450px);
+  background-color:(0,0,0,1);
+  cursor: pointer;
+  color:blue;
+}
+
+
+.Gallery-container #overlay .prev{
+    color:grey;
+    font-size: 80px;
+    position: absolute;
+    left:15%;
+    top:50%;
+    z-index: 20;
+}
+.Gallery-container #overlay .prev:hover{
+  color:yellowgreen;
+}
+
+.Gallery-container #overlay .next{
+  color:grey;
+  font-size: 80px;
+  position: absolute;
+  float:right;
+  right:15%;
+  top:50%;
+
+}
+
+.Gallery-container #overlay .next:hover{
+  color:yellowgreen;
+}
+
+.Gallery-container #overlay .background{
+  width:100%;
+  height:100%;
+  position: absolute;
+  z-index:-1;
+}
+
+
+.Gallery-container #overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
 #Gallery{
     width:100%;
     height:100%;
