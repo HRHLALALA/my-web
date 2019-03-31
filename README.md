@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Demo [hrhlalala.tk](hrhlalala.tk) 
+[Demo](hrhlalala.tk) 
 ## Available Scripts
 
 In the project directory, you can run:
