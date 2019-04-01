@@ -74,8 +74,10 @@
     }
     .container-NavBar .nav{
         float:left;
+        display: none;
     }
     .container-NavBar .nav.logo{
         float:left;
+        display: none;
     }
 }

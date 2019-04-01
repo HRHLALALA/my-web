@@ -9,6 +9,7 @@ class PhotoCard extends React.Component{
     render(){
         return(
             <div id = "PhotoCard">
+                <div className = "close" onClick = {this.props.close}>&#10005;</div>
                 <div className = "photo">
                     <Photo src = {this.photoURL(this.props.list,this.props.photo)}/>                 
                 </div>

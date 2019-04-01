@@ -9,6 +9,5 @@
 .GalleryPage .GalleryContainer{
     position: absolute;
     width:100%;
-    top:30%;
-    
+    height:70%;
 }

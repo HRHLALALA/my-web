@@ -40,7 +40,7 @@ class GalleryContainer extends React.Component{
                 <div id = "overlay">
                     <div class = "background" onClick ={()=>this.overlayOff()}></div>
                     <div  class="prev round" onClick = {()=>this.prevPhoto()}>&#8249;</div>
-                    <PhotoCard list = {this.state.images} photo = {this.state.currImage}/>
+                    <PhotoCard list = {this.state.images} photo = {this.state.currImage} close ={this.overlayOff.bind(this)}/>
                     <div href="#" class="next round" onClick = {()=>this.nextPhoto()}>&#8250;</div>
                 </div>
             </div>
@@ -84,7 +84,7 @@ class GalleryContainer extends React.Component{
         photo.src = this.state.images[item.fileName];*/
         this.setState({currImage:item, index:index})
     }
-    overlayOff(index){
+    overlayOff(){
         const overlay = document.getElementById('overlay');
         overlay.style.display = "none";
 
