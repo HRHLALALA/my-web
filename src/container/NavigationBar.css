@@ -50,3 +50,32 @@
 .container-NavBar .Name:hover{
     transform: rotateY(180deg);
 }
+
+.container-NavBar #dropdown{
+    display: none;
+    font-size:30px;
+    color:white;
+    list-style-type: none;
+    text-align: center;
+    float:right;
+    padding-right:5%;
+}
+.container-NavBar #dropdown li .icon{
+    color:white;
+    transition: all 0.2s linear;
+}
+.container-NavBar #dropdown li .icon:hover{
+    color: violet;;
+    font-size:35px;
+}
+@media screen and (max-width: 600px) {
+    .container-NavBar #dropdown{
+        display: block ;
+    }
+    .container-NavBar .nav{
+        float:left;
+    }
+    .container-NavBar .nav.logo{
+        float:left;
+    }
+}

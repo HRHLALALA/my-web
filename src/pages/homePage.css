@@ -4,7 +4,7 @@
     position: absolute;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: inherit;
 }
 
 .music{
@@ -23,6 +23,14 @@
     font-size:70px;
     top:70%;
     right:5%;
+}
+@media screen and (max-width: 600px) {
+    .homePage{
+        background-size:600px 600px;
+    }
+    .info{
+        top:30%;
+    }
 }
 
 .info:hover{
