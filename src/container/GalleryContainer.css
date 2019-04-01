@@ -30,6 +30,7 @@
   background-color:(0,0,0,1);
   cursor: pointer;
   color:blue;
+  
 }
 
 
@@ -82,6 +83,7 @@
     transform-style: preserve-3d;
     animation: rotation 30s infinite linear;
 }
+
 #Gallery .Photos{
     width: 210px;
     height: 210px;
@@ -100,5 +102,6 @@
     cursor: pointer;
 
 }
+
 
 

@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     height:100%;
+    border-style:dashed;
 }
 
 .component-navigation ul li a{ 
@@ -37,4 +38,34 @@
 .component-navigation .Nav.horizontal ul li{
     float: left;
     height:100%;
+}
+.component-navigation #dropdown{
+    display: none;
+    font-size:30px;
+    color:white;
+    list-style-type: none;
+    text-align: center;
+    padding:5% 20px;
+}
+
+.component-navigation #menu{
+    display: block ;
+}
+
+.component-navigation #dropdown .icon{
+    margin-right:0;
+    transition: all 0.2s linear;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .component-navigation #dropdown{
+        display: block ;
+    }
+    .component-navigation #menu{
+        display: none;
+    }
+    .component-navigation .Nav #menu li{
+        float: none;
+    }
 }
