@@ -6,6 +6,7 @@ import {
     Link,
 } from "react-router-dom";
 class NavigationBar extends React.Component{
+    
     render(){
         return(
             <div className = "container-NavBar">
@@ -45,10 +46,37 @@ class NavigationBar extends React.Component{
             var menu = document.getElementsByClassName("nav logo")[0];
         var style = window.getComputedStyle(menu);
         var display = style.getPropertyValue('display');
-        if(display === "none") menu.style.display = "block";
-        else menu.style.display = "none";
+        var bar = document.getElementsByClassName("container-NavBar")[0];
+        if(display === "none"){
+            menu.style.display = "block";
+            bar.style.height="160px";
+        }
+        else{
+            menu.style.display = "none";
+            bar.style.height = "80px";
+        }
 
     }
+    componentDidMount() {
+        if(this.props.isLogo === "false")
+            var menu = document.getElementsByClassName("nav")[0];
+        else
+            var menu = document.getElementsByClassName("nav logo")[0];
+        // Below this is where I'd like to use the media query to set the sidenavOPen to false. Just not sure how to achieve that
+        this.checkWidth = () => {
+          const match = window.matchMedia(`(max-width: 600px)`);
+          if (match) {
+            menu.style.display = "block";
+          }
+        };
+    
+        this.checkWidth();
+        window.addEventListener("resize", this.checkWidth);
+      }
+    
+      componentWillUnmount() {
+        window.removeEventListener("resize", this.checkWidth);
+      }
 }
 
 export default NavigationBar;

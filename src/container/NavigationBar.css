@@ -5,10 +5,8 @@
     height:80px;
     line-height: 80px;
     background-color:rgba(0,0,0,0.2);
-    z-index: 10;
 }
 .container-NavBar .Name{
-    height:100%;
     float:left;
     margin-left:3%;
     transform-origin:center;
@@ -67,6 +65,14 @@
 .container-NavBar #dropdown li .icon:hover{
     color: violet;;
     font-size:35px;
+}
+@media screen and (min-width: 600px) {
+    .container-NavBar .nav{
+        display: block;
+    }
+    .container-NavBar .nav.logo{
+        display: block;
+    }
 }
 @media screen and (max-width: 600px) {
     .container-NavBar #dropdown{

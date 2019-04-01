@@ -3,8 +3,8 @@
 #PhotoCard {
     position: relative;
     margin: 0 auto;
-    width:60%;
-    height:85%;
+    width:70%;
+    height: 100%;
     margin-top:3%;
     border-color:red;
 }
@@ -65,11 +65,15 @@
 @media screen and (max-width: 600px) {
     #PhotoCard{
         width:100%;
-        margin-top:0;
+        margin-top:-15%;
     }
     #PhotoCard .photo{
         width:100%;
         float:left;
+    }
+    #PhotoCard .close{
+        
+        right:50%;
     }
     #PhotoCard .desc{
         width:100%;
