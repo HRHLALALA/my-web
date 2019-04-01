@@ -82,11 +82,17 @@ class GalleryContainer extends React.Component{
         overlay.style.display = "block";
         /*const photo = document.getElementById("card");
         photo.src = this.state.images[item.fileName];*/
-        this.setState({currImage:item, index:index})
+        this.setState({currImage:item, index:index});
+        const gallery = document.getElementById('Gallery');
+        gallery.style['animation-play-state']= "paused";
+        gallery.style['display']= "none";
     }
     overlayOff(){
         const overlay = document.getElementById('overlay');
         overlay.style.display = "none";
+        const gallery = document.getElementById('Gallery');
+        gallery.style['animation-play-state']= "running";
+        gallery.style['display']= "flex";
 
     }
     nextPhoto(){
