@@ -1,38 +1,38 @@
 [
     {
         "title": "Cat",
-        "description":"This is a cat",
+        "description":"\"A cat with a story.  \"",
         "fileName": "cat.jpg"
     },
 
     {
         "title":"UNSW",
-        "description":"This is unsw",
+        "description":"The beautiful UNSW under the dusk",
         "fileName":"unsw.jpeg"
     },
     {
-        "title":"Lake",
-        "description":"This is lake",
+        "title":"Bumbunga Lake",
+        "description":"This is pink lake photod in Adelaide.",
         "fileName":"lake.jpeg"
     },
     {
         "title":"Curve",
-        "description":"This is curve",
+        "description":"This is curve photod in Adelaide",
         "fileName":"curve.jpeg"
     },
     {
-        "title":"Ocean",
-        "description":"This is ocean",
+        "title":"Ocean(Kangaroo Island)",
+        "description":"This is ocean photod on the boat to Kangaroo Island",
         "fileName":"ocean.jpeg"
     },
     {
         "title":"Ocean 2",
-        "description":"This is ocean2",
+        "description":"This is ocean photod on the boat to Kangaroo Island",
         "fileName":"ocean2.jpeg"
     },
     {
         "title":"Tu Wu",
-        "description":"This is tuwu",
+        "description":"I miss the time when my parents and I travelled in Xiamen",
         "fileName":"tuwu.jpeg"
     },
     {
@@ -47,12 +47,12 @@
     },
     {
         "title":"afternoon",
-        "description":"This is coffee cup",
+        "description":"Enjoy the aftertoon and enjoy the life.",
         "fileName":"afternoon.jpeg"
     },
     {
-        "title":"coffee cup",
-        "description":"This is coffee cup",
+        "title":"Basketball Court",
+        "description":"I love playing basketball. ",
         "fileName":"basketball.jpg"
     }
 

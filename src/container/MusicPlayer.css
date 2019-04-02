@@ -27,12 +27,18 @@
     width:70px;
     height:70px;
     border-style: double;
-    display:flex;
+    display: -webkit-flex;  /* 新版本语法: Chrome 21+ */
+    display: flex;          /* 新版本语法: Opera 12.1, Firefox 22+ */
+    display: -webkit-box;   /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;      /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;   /* 混合版本语法: IE 10 */ 
     align-items: center;
     justify-content: center;
     transition:all 0.5s linear;
     box-shadow: 2px 2px 4px 4px orangered;
     flex-direction: column;
+    -webkit-flex-direction:column;
+    -webkit-box-direction:column;
     overflow: hidden;
     z-index: 1;
 }
@@ -47,7 +53,11 @@
 }
 
 .container-player .header .middle-control{
-    display:flex;
+    display: -webkit-flex;  /* 新版本语法: Chrome 21+ */
+    display: flex;          /* 新版本语法: Opera 12.1, Firefox 22+ */
+    display: -webkit-box;   /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;      /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;   /* 混合版本语法: IE 10 */ 
     align-items: center;
     justify-content: center;
     position: absolute;

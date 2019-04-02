@@ -16,7 +16,7 @@
 }
 .container-NavBar .Name.HRH{
     font-family:'Sacramento';
-    font-size:50px;
+    font-size:2.5em;
     color:transparent;
     background: linear-gradient(to bottom right, red, yellow);
     background-clip:text;
@@ -26,8 +26,8 @@
 
 .container-NavBar .Name.UNSW{
     font-family: monospace,Gill Sans Extrabold,;
-    margin-left:60%;
-    font-size:30px;
+    margin-left:50%;
+    font-size:2em;
     color:transparent;
     background: linear-gradient(to bottom right, yellow,red);
     background-clip: text;
@@ -51,7 +51,7 @@
 
 .container-NavBar #dropdown{
     display: none;
-    font-size:30px;
+    font-size:2em;
     color:white;
     list-style-type: none;
     text-align: center;
@@ -66,15 +66,8 @@
     color: violet;;
     font-size:35px;
 }
-@media screen and (min-width: 600px) {
-    .container-NavBar .nav{
-        display: block;
-    }
-    .container-NavBar .nav.logo{
-        display: block;
-    }
-}
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 800px) {
     .container-NavBar #dropdown{
         display: block ;
     }

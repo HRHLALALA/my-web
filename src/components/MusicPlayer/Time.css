@@ -1,5 +1,6 @@
 .time{
     display: flex;
+    display: -webkit-box; 
     border-color: white;
     color:white;
     width:100%;

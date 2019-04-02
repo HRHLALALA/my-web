@@ -20,17 +20,17 @@
 }
 .component-navlogo .logos ul li a{
     margin-top:3%;
-    margin-right:30px;
+    margin-right:2em;
 }
 
 .component-navlogo .logos ul li a img{
-    width:50px;
-    height:50px;
+    width:2.5em;
+    height:2.5em;
     transition: all 0.2s linear;
 }
 
 .component-navlogo .logos ul li a:hover:not(.active) img{
-    width:60px;
-    height:60px;
+    width:3em;
+    height:3em;
 }
 
