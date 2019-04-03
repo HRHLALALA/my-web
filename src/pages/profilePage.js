@@ -1,7 +1,7 @@
 import React from 'react';
 //import bg from './../Image/cat.jpg';
 //import MusicPlayer from './../container/MusicPlayer.js';
-import hrh from './../Image/lonely.jpeg';
+import hrh from './../Image/hrh.jpg';
 import NavigationBar from './../container/NavigationBar';
 import './profilePage.css';
 class ProfilePage extends React.Component{
@@ -18,7 +18,7 @@ class ProfilePage extends React.Component{
                     Name: Renhao Huang <br/>
                     Age: 22 <br/>
                     University: UNSW <br/>
-                    Nationality: CHINESE <br/>
+                    Nationality: Chinese <br/>
                 </p>
             </div>                
             

@@ -100,6 +100,7 @@ class MusicPlayer extends React.Component{
     loadJson(){
         var music = require('../Music/Music.json');
     }
+
 }
 
 export default MusicPlayer;

@@ -3,9 +3,12 @@
     width:100%;
     height:100%;
     background-size: 100% 100%;
+    background-position-y: 5em;
+    background-color:rgb(201, 195, 195);
+    background-blend-mode: inherit;
+    background-position: center center;
     background-repeat: no-repeat;
 }
-
 
 .profilePage .photo{
     position: absolute;
@@ -14,31 +17,48 @@
 
 
 .profilePage .title{
-    position: fixed;
-    margin-top:15%;
-    margin-left:10%;
+    position: absolute;
+    left:10%;
+    bottom: 5em;
+    background-color:rgba(0, 0, 0,0.3);
     
 }
 
 .profilePage .title h2{
     font-family: Brush Script MT, Brush Script Std, cursive;
     text-align: center;
-    color:rgb(124, 123, 43);
+    color:white;
     transform-origin:center;
     transition: all 0.5s linear;
+    font-size-adjust: initial;
+    font-size: 3em;
 }
 
 .profilePage .title p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Hensa;
     color:white;
-    font-size:25px;
-    line-height: 40px;
+    font-size:2em;
+    line-height: 1.5em;
+    padding-left:1em;
 }
 
-.profilePage .title h2{
-    font-size:50px;
-}
 
 .title:hover h2{
     transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 500px){
+    .profilePage{
+        background-size:auto 100%;
+        background-position-x: 50%;
+    }
+    .profilePage .title{
+        left:0;
+    }
+    .profilePage .title h2{
+        font-size:2em;
+    }
+    .profilePage .title p{
+        font-size:1em;
+    }
 }
