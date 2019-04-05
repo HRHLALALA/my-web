@@ -1,9 +1,9 @@
 {
-  "main.css": "/static/css/main.d21742eb.chunk.css",
-  "main.js": "/static/js/main.ae4110d1.chunk.js",
-  "main.js.map": "/static/js/main.ae4110d1.chunk.js.map",
-  "static/js/1.93752167.chunk.js": "/static/js/1.93752167.chunk.js",
-  "static/js/1.93752167.chunk.js.map": "/static/js/1.93752167.chunk.js.map",
+  "main.css": "/static/css/main.aaebf369.chunk.css",
+  "main.js": "/static/js/main.fb23d537.chunk.js",
+  "main.js.map": "/static/js/main.fb23d537.chunk.js.map",
+  "static/js/1.76284514.chunk.js": "/static/js/1.76284514.chunk.js",
+  "static/js/1.76284514.chunk.js.map": "/static/js/1.76284514.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/boa.jpg": "/static/media/boa.14f050de.jpg",
@@ -30,8 +30,8 @@
   "static/media/ocean2.jpeg": "/static/media/ocean2.05827025.jpeg",
   "static/media/tuwu.jpeg": "/static/media/tuwu.fea70f13.jpeg",
   "static/media/unsw.jpeg": "/static/media/unsw.d4298aca.jpeg",
-  "static/css/main.d21742eb.chunk.css.map": "/static/css/main.d21742eb.chunk.css.map",
+  "static/css/main.aaebf369.chunk.css.map": "/static/css/main.aaebf369.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.6b6d4b2c22535294728c0d2e0604ebff.js": "/precache-manifest.6b6d4b2c22535294728c0d2e0604ebff.js",
+  "precache-manifest.60da04648e94e4d65ce9526a3f86a751.js": "/precache-manifest.60da04648e94e4d65ce9526a3f86a751.js",
   "service-worker.js": "/service-worker.js"
 }
