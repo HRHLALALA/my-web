@@ -20,10 +20,10 @@
 }
 
 .container-player .header{
-    left:5%;
-    position: absolute;
+    position: relative;
     float: left;
     border-radius:50%;
+    margin-left:1%;
     width:70px;
     height:70px;
     border-style: double;
@@ -49,7 +49,7 @@
 }
 
 .container-player .header .progress-bar{
-    position:absolute;
+    position: relative;;
 }
 
 .container-player .header .middle-control{
@@ -71,4 +71,31 @@
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     transform: scale(1.05);
+}
+.container-player .changeSong{
+    position: relative;
+    color:white;
+    font-size:50px;
+    float:left;
+    margin-left:1%;
+}
+.container-player .changeSong:hover{
+    color:violet;
+}
+.container-player .song-title{
+    position: relative;
+    color:white;
+    font-family: "Gloria Hallelujah";;
+    font-size: 30px;
+    padding: 0;
+    float:left;
+    margin-left:1%;
+    padding:0 0;
+    padding-top:0.5em;
+}
+
+@media screen and (max-width: 800px){
+    .container-player .song-title{
+        display: none;
+    }
 }

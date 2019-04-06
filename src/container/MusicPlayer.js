@@ -7,24 +7,38 @@ import { Circle } from 'rc-progress';
 //import bg from './../Image/boa.jpg';
 //import Photo from '../components/Photo';
 import bgm from "./../Music/bgm.mp3";
+import songList from './../Music/Music.json';
 
 class MusicPlayer extends React.Component{
     constructor(props){
         super(props);
+        let songlist = {};
+        const r = require.context('./../Music', false, /\.(mp3)$/)
+        r.keys().map((item, index) => { songlist[item.replace('./', '')] = r(item); });
         this.state = {
+            index:0,
+            songlist: songlist,
             duration:0,
             currentTime:0,
             needControl:true,
             playing:false,
         }
     }
+    importAll(r) {
+        let songs  = {};
+        r.keys().map((item, index) => { songs[item.replace('./', '')] = r(item); });
+        return songs;
+    }
     render(){
         return(
             <div className ="container-player">
+                <div className = "changeSong prev" 
+                    onClick = {()=>this.prevSong()}>&#8249;</div>
                 <div className="header">
                     
                     <div className ="middle-control"
                     onMouseOver = {()=>this.showControl()}
+                    onClick = {()=>this.showControl()}
                     onMouseOut={()=>this.hideControl()}
                     >{
                         this.state.needControl ?
@@ -46,16 +60,45 @@ class MusicPlayer extends React.Component{
                         className = "progress-bar"
                     />
 
-                    <audio src = {bgm} 
-                    id="audio" 
-                    onTimeUpdate={this.playing.bind(this)}>
+                    <audio src = {this.setSong()} 
+                    id="audio"
+                    onTimeUpdate={this.playing.bind(this)}
+                    onEnded ={this.onended.bind(this)}>
                     </audio>            
                     {/* 音频控件  */}
 
                 </div >
-                
+                <div className = "changeSong next"
+                    onClick = {()=>this.nextSong()}>&#8250;</div>
+                <div className = "song-title">
+                        "{this.getSong().title}" by {this.getSong().Artist}
+                </div>
             </div>
         );
+    }
+    getSong(){
+        //console.log(this.state);
+        if(this.state === null) return "";
+        else return songList[this.state.index];
+    }
+    nextSong(){
+        //let music = document.getElementById('audio');
+        this.setState({
+            index:(this.state.index+1)%songList.length,
+        });
+        //music.src = this.setSong();
+    }
+    prevSong(){
+        //let music = document.getElementById('audio');
+        this.setState({
+            index:(this.state.index-1+songList.length)%songList.length,
+        });
+        //music.src = this.setSong();
+    }
+    setSong(){
+        var music = songList[this.state.index];
+        var musicAddress =this.state.songlist[music.path];
+        return musicAddress;
     }
     start(){
         let music = document.getElementById('audio');
@@ -77,30 +120,33 @@ class MusicPlayer extends React.Component{
         
         let music = document.getElementById('audio');
         this.setState({
-            duration:music.duration,
-            currentTime:music.currentTime,
+            duration:parseInt(music.duration),
+            currentTime:parseInt(music.currentTime),
         });
+        //console.log("currentTime",this.state.currentTime,"durationn",this.state.duration);
+    }
+
+    onended(){
+        let music = document.getElementById('audio');
+        this.setState({
+            index:(this.state.index+1)%songList.length,
+        }//,()=>{
+            //music.src = this.setSong(); } 
+        );
+        music.autoplay = true;
     }
 
     showControl(){
-
         this.setState({
             needControl:true,
         });
-        console.log(this.state.needControl)
     }
 
     hideControl(){
-        console.log("hi");
         this.setState({
             needControl:false,
         });
     }
-
-    loadJson(){
-        var music = require('../Music/Music.json');
-    }
-
 }
 
 export default MusicPlayer;

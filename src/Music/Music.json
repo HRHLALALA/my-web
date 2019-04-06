@@ -2,7 +2,42 @@
     {
         "title": "Instagram",
         "album name":"Instagram",
-        "path":"./bgm.mp3",
-        "cover path":"./../Image/boa.jpg"
+        "Artist": "Dean",
+        "path":"bgm.mp3",
+        "cover path":"boa.jpg",
+        "Description":"It is Instagram"
+    },
+    {
+        "title": "My Way You Way",
+        "album name":"Instagram",
+        "Artist": "Boa",
+        "path":"My_way_your_way.mp3",
+        "cover path":"boa.jpg",
+        "Description":"It is Instagram"
+    },
+    {
+        "title": "Solo",
+        "album name":"Solo",
+        "Artist": "Jennie",
+        "path":"solo.mp3",
+        "cover path":"boa.jpg",
+        "Description":"It is Instagram"
+    },
+    {
+        "title": "Good night",
+        "album name":"Solo",
+        "Artist": "Twice",
+        "path":"twice.mp3",
+        "cover path":"boa.jpg",
+        "Description":"It is Instagram"
+    },
+    {
+        "title": "What Is Love",
+        "album name":"Solo",
+        "Artist": "Twice",
+        "path":"what_is_love.mp3",
+        "cover path":"boa.jpg",
+        "Description":"It is Instagram"
     }
+
 ]

@@ -65,7 +65,6 @@ class NavigationBar extends React.Component{
         // Below this is where I'd like to use the media query to set the sidenavOPen to false. Just not sure how to achieve that
         this.checkWidth = () => {
           const match = window.matchMedia(`(min-width: 600px)`);
-          console.log(match);
           if (match.matches) {
             menu.style.display = "block";
           }
