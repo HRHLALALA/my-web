@@ -82,14 +82,12 @@ class MusicPlayer extends React.Component{
         else return songList[this.state.index];
     }
     nextSong(){
-        //let music = document.getElementById('audio');
         this.setState({
             index:(this.state.index+1)%songList.length,
         });
         //music.src = this.setSong();
     }
     prevSong(){
-        //let music = document.getElementById('audio');
         this.setState({
             index:(this.state.index-1+songList.length)%songList.length,
         });
@@ -119,6 +117,7 @@ class MusicPlayer extends React.Component{
     playing(){
         
         let music = document.getElementById('audio');
+        music.autoplay = true;
         this.setState({
             duration:parseInt(music.duration),
             currentTime:parseInt(music.currentTime),
@@ -133,7 +132,6 @@ class MusicPlayer extends React.Component{
         }//,()=>{
             //music.src = this.setSong(); } 
         );
-        music.autoplay = true;
     }
 
     showControl(){

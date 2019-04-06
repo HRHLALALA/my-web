@@ -2,7 +2,6 @@ import React from 'react';
 import PhotoList from './../Image/Photos/photos.json';
 import './GalleryContainer.css';
 import Photo from './../components/Photo';
-import Photobase from './../Image/Photos/cat.jpg';
 import PhotoCard from './PhotoCard';
 class GalleryContainer extends React.Component{
     constructor(props){

@@ -40,10 +40,11 @@ class NavigationBar extends React.Component{
         )
     }
     dropdown(){
+        var menu;
         if(this.props.isLogo === "false")
-            var menu = document.getElementsByClassName("nav")[0];
+            menu = document.getElementsByClassName("nav")[0];
         else
-            var menu = document.getElementsByClassName("nav logo")[0];
+            menu = document.getElementsByClassName("nav logo")[0];
         var style = window.getComputedStyle(menu);
         var display = style.getPropertyValue('display');
         var bar = document.getElementsByClassName("container-NavBar")[0];
@@ -58,10 +59,11 @@ class NavigationBar extends React.Component{
 
     }
     componentDidMount() {
+        var menu;
         if(this.props.isLogo === "false")
-            var menu = document.getElementsByClassName("nav")[0];
+            menu = document.getElementsByClassName("nav")[0];
         else
-            var menu = document.getElementsByClassName("nav logo")[0];
+            menu = document.getElementsByClassName("nav logo")[0];
         // Below this is where I'd like to use the media query to set the sidenavOPen to false. Just not sure how to achieve that
         this.checkWidth = () => {
           const match = window.matchMedia(`(min-width: 600px)`);

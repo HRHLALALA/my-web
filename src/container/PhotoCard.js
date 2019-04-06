@@ -1,7 +1,6 @@
 import React from 'react';
 import './PhotoCard.css';
 import Photo from './../components/Photo';
-import Remarkable from 'react-remarkable';
 
 
 class PhotoCard extends React.Component{
